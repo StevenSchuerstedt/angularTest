@@ -51,7 +51,7 @@ export class TestcomponentComponent implements OnInit{
 
       const geometry = new THREE.PlaneGeometry(100,100,32);
      
-      const loader = new THREE.TextuBUGreLoader();
+      const loader = new THREE.TextureLoader();
       const material = new THREE.MeshBasicMaterial({map: loader.load('https://threejsfundamentals.org/threejs/resources/images/wall.jpg')});
 
       this.mesh = new THREE.Mesh(geometry, material);
