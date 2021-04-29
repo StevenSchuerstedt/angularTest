@@ -9,4 +9,5 @@ branches:
 before_script:
   - npm install -g @angular/cli
 script:
-- ng build
+- npm install
+- npm run build
