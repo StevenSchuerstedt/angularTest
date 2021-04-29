@@ -20,10 +20,4 @@ before_script:
 script:
 - docker-compose up --detach
 
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: dist/my-app
-  on:
-    branch: master
+
