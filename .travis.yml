@@ -1,13 +1,12 @@
 language: node_js
 node_js:
   - "12"
-dist: trusty
+dist: trusty 
 sudo: required
-branches:
-  only:
-  - master
+services: 
+  - docker
+
 before_script:
-  - npm install -g @angular/cli
+  - docker-compose build
 script:
-- npm install
-- npm run build
+- docker-compose up
